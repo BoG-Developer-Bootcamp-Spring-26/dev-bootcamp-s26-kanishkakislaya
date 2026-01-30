@@ -1,0 +1,123 @@
+:root {
+    --gt-gold: #FFD700;
+    --gt-navy: #003057;
+    --bg-light: #f0f4f8;
+    --accent: #FF6F61; 
+}
+
+body {
+    margin: 0;
+    padding: 40px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/bgimage.jpg");
+    background-size: cover;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
+}
+
+/* Main card */
+.mycard {
+    background: whitesmoke;
+    width: 400px; 
+    padding: 36px;
+    border-radius: 28px;
+    border: 2px solid #FFD700;
+    text-align: center;
+    transition: transform 0.21s ease, box-shadow 0.21s ease, border-color 0.21s ease;
+}
+
+.mycard:hover {
+    transform: scale(1.06) translateY(-8px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+    border-color: #FF6F61;
+}
+
+
+.profilePic {
+    width: 300px;   
+    height: 300px; 
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #FFD700;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.mycard:hover .profilePic {
+    transform: scale(1.08);
+}
+
+
+.name {
+    color: #003057;
+    font-size: 1.8rem;
+    margin: 8px 0;
+}
+
+
+.major {
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+
+.passion {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+
+.from {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+
+.experience-box {
+    background: #f9f9f9;
+    border-left: 4px solid #FF6F61;
+    padding: 16px;
+    border-radius: 12px;
+    text-align: left;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.experience-box h3 {
+    margin-top: 0;
+    color:#003057;
+}
+
+.experience-box p {
+    margin: 8px 0 0 0;
+    color: #333;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+
+.btn {
+    background: #003057;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+
+.btn:hover {
+    background: #FF6F61;
+    transform: scale(1.08);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
